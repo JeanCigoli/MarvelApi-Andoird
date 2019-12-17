@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+        <RelativeLayout
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/nomePersonagem"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="NOME DO PERSONAGEM"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgPersonagem"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_below="@+id/nomePersonagem"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="15dp"
+                android:src="@color/colorBlueDark" />
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgPersonagem"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/descPersonagem"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:maxLines="3"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque mauris sit amet tincidunt malesuada. Nunc vulputate augue sit amet purus facilisis suscipit. Integer ut auctor est. Etiam condimentum mi ipsum, et ultricies orci fermentum a. Donec semper tellus nulla, eget feugiat magna tempus et. Nunc vel molestie ex. Aliquam hendrerit suscipit leo, at euismod dui bibendum eget. Praesent nunc massa, aliquet sit amet orci sit amet, mattis cursus mi. Cras elit velit, suscipit et finibus vitae, interdum vitae arcu. Morbi vel interdum enim. Donec eu neque sed ligula mattis congue. Mauris lacinia lorem eu pretium vestibulum. Nullam suscipit consequat urna. Sed sed lacus eu leo fringilla vestibulum. Aliquam vitae cursus lorem."
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btnVerMais"
+                android:layout_width="200dp"
+                android:layout_below="@+id/scrollView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="Ver mais!"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@color/colorBlue"
+                android:layout_height="40dp"
+                android:layout_gravity="center" />
+
+
+        </RelativeLayout>
+</android.support.v7.widget.CardView>

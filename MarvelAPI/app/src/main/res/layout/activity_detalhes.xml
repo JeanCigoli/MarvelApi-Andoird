@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PersonagemActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"></include>
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/nomePersonagem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="NOME DO PERSONAGEM"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/nomePersonagem"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:id="@+id/relaView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/descPersonagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineHeight="25dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque mauris sit amet tincidunt malesuada. Nunc vulputate augue sit amet purus facilisis suscipit. Integer ut auctor est. Etiam condimentum mi ipsum, et ultricies orci fermentum a. Donec semper tellus nulla, eget feugiat magna tempus et. Nunc vel molestie ex. Aliquam hendrerit suscipit leo, at euismod dui bibendum eget. Praesent nunc massa, aliquet sit amet orci sit amet, mattis cursus mi. Cras elit velit, suscipit et finibus vitae, interdum vitae arcu. Morbi vel interdum enim. Donec eu neque sed ligula mattis congue. Mauris lacinia lorem eu pretium vestibulum. Nullam suscipit consequat urna. Sed sed lacus eu leo fringilla vestibulum. Aliquam vitae cursus lorem."
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/titulo"
+                    android:layout_below="@+id/descPersonagem"
+                    android:layout_width="match_parent"
+                    android:text="Comics"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlueDark"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"/>
+
+                <ListView
+                    android:id="@+id/listComics"
+                    android:layout_below="@+id/titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

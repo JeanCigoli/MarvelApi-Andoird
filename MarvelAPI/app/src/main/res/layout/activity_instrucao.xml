@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/imgIntro"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgIntro"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:text="Instruções para se tornar digno!"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="270dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/titulo"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relaVie">
+
+                <TextView
+                android:id="@+id/int1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                    android:lineSpacingMultiplier="1.3"
+                    android:lineSpacingExtra="1dp"
+                    android:layout_marginTop="20dp"
+                android:text="1º - Digite o nome de um personagem desejado"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/int2"
+                android:lineSpacingMultiplier="1.3"
+                android:lineSpacingExtra="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/int1"
+                android:text="2º - Pressione o botão de busca em seu teclado"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/int3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.3"
+                android:lineSpacingExtra="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/int2"
+                android:text="3º - Veja as informações dos seus personagens prediletos utilizando os botões laterais"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@color/colorBlueDark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:text="Vamos começar!" />
+
+
+
+</RelativeLayout>
